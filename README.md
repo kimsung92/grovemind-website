@@ -4,8 +4,8 @@ Bilingual company introduction for **Shenzhen Grovemind Technology Co., Ltd. / æ
 
 ## Website
 
-- English: https://kimsung92.github.io/grovemind-website/?lang=en
-- Chinese: https://kimsung92.github.io/grovemind-website/?lang=zh
+- English: https://grovemindlabs.com/?lang=en
+- Chinese: https://grovemindlabs.com/?lang=zh
 - Corporate email: jinxing@grovemindlabs.com
 
 The primary focus is software and app development. AI application development and product/industrial design are secondary areas. Company identity and address are based on supplied company records. No customer, certification, revenue or released-product claims are made. The website does not imply Apple endorsement or enrollment approval.
@@ -18,20 +18,21 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to `main` p
 
 Local preview: `python3 -m http.server 4173 --bind 127.0.0.1`.
 
-## Custom domain â€” prepared, not yet enabled
+## Custom domain
 
-The domain `grovemindlabs.com` has been registered, but this initial release deliberately uses the GitHub Pages URL, following the request to bind the domain later. No `CNAME` file is committed and no domain DNS records are changed.
+The production domain is **grovemindlabs.com**. GitHub Pages is configured with this apex domain in `CNAME`; `www.grovemindlabs.com` also points to the same site and is redirected by GitHub to the apex domain.
 
-When ready:
+Configured on November 3, 2026:
 
-1. Verify the domain under the owning GitHub account's Pages settings using the exact TXT name/value GitHub supplies.
-2. In this repository's Pages settings, set `www.grovemindlabs.com` as the custom domain. GitHub will write a root `CNAME` file.
-3. At Alibaba Cloud DNS, add `www` as a CNAME to **`kimsung92.github.io`**. The target contains no protocol and no `/grovemind-website` path.
-4. For the bare domain, follow GitHub's current official A/AAAA instructions. Confirm current addresses in the documentation below before entering them. GitHub can redirect between the bare domain and `www` when both are configured.
-5. After DNS and certificate provisioning complete, enable **Enforce HTTPS**. Verify both URLs and mail delivery.
-6. Add canonical and Open Graph URL metadata for the chosen production domain, then update these README links and the sitemap.
+- Domain ownership verified under the `kimsung92` GitHub account, using the GitHub-provided TXT verification record.
+- Four apex A records: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`.
+- `www` CNAME: `kimsung92.github.io` (no protocol or repository path).
+- Canonical and Open Graph URLs use `https://grovemindlabs.com/`; `robots.txt` links to the two-page sitemap.
+- GitHub provisions the TLS certificate. HTTPS enforcement is enabled once the certificate is ready; see the dated deployment verification for the confirmed state.
 
-**Preserve the existing MX, SPF, DKIM, DMARC and mailbox-related CNAME records. Do not replace the DNS zone or change nameservers merely to bind the website.** The website and email use separate DNS records and can coexist.
+**All eight pre-existing email records were preserved**, including three MX records, SPF, and the `mail`, `smtp`, `imap`, `pop3` CNAME records. Their values, TTLs, enabled states and original update times were compared before and after the website DNS additions. No nameservers were changed.
+
+Keep the GitHub domain-verification TXT record. For future website hosting changes, update only the website-specific DNS records, preserving all mail-related records.
 
 Official instructions:
 
