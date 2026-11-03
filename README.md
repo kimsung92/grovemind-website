@@ -12,7 +12,7 @@ The primary focus is software and app development. AI application development an
 
 ## Editing and publishing
 
-`index.html` contains the page, styles and language switching. `privacy.html` contains a bilingual website privacy notice. Fonts and the favicon are in `assets/`. Both languages are visible when JavaScript is disabled. No build tools are required.
+`index.html` contains the page, styles and language switching. The current typography-led layout uses direct service descriptions and keeps complete legal names and the registered address in a compact 12px footer; mobile navigation remains visible. `privacy.html` contains a bilingual website privacy notice. Fonts and the favicon are in `assets/`. Both languages are visible when JavaScript is disabled. No build tools are required.
 
 GitHub Pages publishes the root of the `main` branch. Changes pushed to `main` publish automatically through GitHub's Pages build.
 
@@ -43,4 +43,4 @@ GitHub Pages is for static information here, not a shopping checkout or commerci
 
 ## Assets
 
-Manrope font from the Google Fonts repository, licensed under the SIL Open Font License: see `assets/OFL-Manrope.txt`. The small typographic favicon is authored for this website; it is not a trademark registration or a separately approved company logo.
+Manrope (body and wordmark) and Newsreader (English display headings) are self-hosted from the Google Fonts repository under the SIL Open Font License. See `assets/OFL-Manrope.txt` and `assets/OFL-Newsreader.txt`. Chinese display headings use the system Songti/SimSun serif fallback. The small typographic favicon is authored for this website; it is not a trademark registration or a separately approved company logo.
