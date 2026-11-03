@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183f35">
+  <meta name="description" content="GroveMind — Shenzhen Grovemind Technology Co., Ltd. Software and app development, AI applications and product design. 深圳市智林星瀚科技有限公司：软件与 App 开发、AI 应用及产品设计。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GroveMind | Software & App Development">
+  <meta property="og:description" content="Software with purpose. A Shenzhen-based technology company focused on software and app development. 深圳市智林星瀚科技有限公司。">
+  <title>GroveMind | Software & App Development · 软件与 App 开发</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./assets/manrope-variable.ttf" as="font" type="font/ttf" crossorigin>
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var selectedLanguage = new URLSearchParams(location.search).get('lang') || localStorage.getItem('grovemind-language');
+      document.documentElement.lang = selectedLanguage === 'zh' ? 'zh-CN' : 'en';
+    } catch (_) { document.documentElement.lang = 'en'; }
+  </script>
+  <style>
+    @font-face{font-family:Manrope;src:url('./assets/manrope-variable.ttf') format('truetype');font-weight:200 800;font-display:swap}
+    :root{--paper:#f8f9f5;--ink:#183f35;--muted:#4e645b;--line:#cdd8cf;--green:#dce9b6;--white:#fff;--accent:#bfe17d;--space:clamp(22px,4.5vw,72px);--width:1280px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:32px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Manrope,"PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+    html.js[lang="en"] [data-lang="zh"],html.js[lang="zh-CN"] [data-lang="en"]{display:none!important}html:not(.js) .language{display:none}
+    h1,h2,h3,p{margin:0}h1,h2,h3{text-wrap:balance}a{color:inherit;text-underline-offset:.25em}button{font:inherit}a,button{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--ink);outline-offset:6px}::selection{background:var(--ink);color:var(--paper)}body{scrollbar-color:var(--muted) var(--paper)}
+    .wrap{width:min(var(--width),calc(100% - var(--space)*2));margin-inline:auto}.skip{position:absolute;left:20px;top:-100px;background:var(--ink);color:var(--white);padding:10px 20px;z-index:10}.skip:focus{top:15px}
+    .site-header{display:flex;align-items:center;justify-content:space-between;gap:30px;padding-block:30px;border-bottom:1px solid var(--line)}.brand{text-decoration:none;font-size:28px;font-weight:800;letter-spacing:-.04em;white-space:nowrap}.brand-dot{color:#60823d}.nav-right,.nav-links{display:flex;align-items:center;gap:30px}.nav-links a{font-size:14px;font-weight:600;text-decoration:none}.nav-links a:hover{text-decoration:underline}.language{display:flex;align-items:center;border:1px solid var(--line);padding:4px;border-radius:8px;gap:2px}.language button{border:0;background:transparent;color:var(--muted);font-size:12px;font-weight:700;padding:7px 10px;min-height:44px;border-radius:4px;cursor:pointer}.language button[aria-pressed="true"]{background:var(--ink);color:var(--white)}.language button:hover{background:#e5ebde}.language button[aria-pressed="true"]:hover{background:#285547}
+    .hero{padding-top:72px;padding-bottom:58px}.hero-main{display:grid;grid-template-columns:1.1fr 1fr;align-items:end;gap:48px}.hero h1{font-size:clamp(56px,6.6vw,92px);font-weight:600;line-height:1.06;letter-spacing:-.04em}.hero h1 em{font-style:normal;color:#64813a}.hero-copy{max-width:39ch;font-size:19px;color:var(--muted);padding-bottom:6px;line-height:1.8}.hero-actions{display:flex;align-items:center;gap:24px;margin-top:30px}.button{display:inline-flex;justify-content:center;align-items:center;gap:18px;padding:14px 23px;min-height:52px;border-radius:6px;background:var(--ink);color:var(--white);font-size:14px;font-weight:700;text-decoration:none;transition:background .2s}.button:hover{background:#285547}.icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;flex:none}.sub-link{font-size:14px;font-weight:600}
+    .scope-band{margin-top:62px;display:grid;grid-template-columns:1.28fr 1fr 1fr;background:var(--ink);color:var(--paper);min-height:184px;border-radius:12px;overflow:hidden}.scope-band>div{padding:30px 34px;display:flex;flex-direction:column;justify-content:space-between;gap:23px}.scope-band>div+div{border-left:1px solid #547368}.scope-band .primary{background:var(--green);color:var(--ink)}.scope-band .scope-name{font-size:clamp(22px,2.6vw,34px);font-weight:500;line-height:1.2;letter-spacing:-.025em}.scope-band .scope-detail{font-size:13px}.scope-band svg{align-self:flex-end;width:25px;height:25px}.scope-top{display:flex;justify-content:space-between;align-items:start;gap:14px}
+    .hero-bottom{display:flex;justify-content:space-between;gap:24px;align-items:center;margin-top:20px;font-size:12px;color:var(--muted)}.hero-bottom p:last-child{text-align:right}
+    .section{padding-block:88px;border-top:1px solid var(--line)}.section-heading{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;margin-bottom:44px}.section-heading h2,.contact h2{font-size:clamp(32px,4vw,50px);font-weight:500;letter-spacing:-.035em;line-height:1.2}.intro-text{font-size:22px;line-height:1.7;max-width:44ch}.about-detail{margin-left:calc(40% + 26px);max-width:65ch;color:var(--muted);font-size:16px}.about-detail p+p{margin-top:18px}
+    .practice-heading{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:34px}.practice-heading h2{font-size:clamp(32px,4vw,50px);font-weight:500;letter-spacing:-.035em;line-height:1.2}.practice-heading>p{max-width:45ch;color:var(--muted)}.service{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;padding:35px 0;border-top:1px solid var(--line)}.service h3{font-size:24px;font-weight:600;letter-spacing:-.025em}.service .service-text{color:var(--muted);max-width:65ch}.service .topics{display:flex;gap:8px 24px;flex-wrap:wrap;margin-top:18px;color:var(--ink);font-size:12px;font-weight:600}.service:last-child{padding-bottom:0}
+    .approach{background:#eaf0e2;padding-block:70px}.approach-top{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;margin-bottom:38px}.approach h2{font-size:32px;font-weight:500;letter-spacing:-.03em;line-height:1.3}.approach-top>p{max-width:61ch;color:var(--muted)}.approach-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:38px}.approach-steps article{border-top:1px solid #adbea6;padding-top:22px}.approach-steps h3{font-size:19px;font-weight:600;margin-bottom:10px}.approach-steps p{font-size:14px;color:var(--muted);max-width:42ch}
+    .contact{padding-block:88px}.contact-top{display:flex;justify-content:space-between;align-items:start;gap:45px;margin-bottom:50px}.contact-top>p{max-width:46ch;color:var(--muted)}.contact-mail{display:inline-flex;align-items:center;gap:22px;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:10px;font-size:clamp(20px,3.8vw,44px);line-height:1.35;letter-spacing:-.025em;overflow-wrap:anywhere}.contact-mail:hover{color:#537230}.contact-mail .icon{width:30px;height:30px}.company-details{border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:65px;margin-top:54px;padding-top:32px;font-size:14px}.detail-title{font-size:12px;font-weight:700;color:var(--muted);margin-bottom:12px}.company-name{font-size:17px;font-weight:600;line-height:1.6}.company-cn{font-family:"PingFang SC","Microsoft YaHei",sans-serif;margin-top:7px}.company-description{font-size:13px;color:var(--muted);margin-top:16px}.company-details address{font-style:normal;color:var(--muted);line-height:1.9;max-width:57ch}.company-details address+p{margin-top:12px;color:var(--muted)}
+    footer{border-top:1px solid var(--line);padding-block:24px;display:flex;align-items:center;justify-content:space-between;gap:22px;font-size:12px;color:var(--muted)}footer a{white-space:nowrap;display:inline-flex;align-items:center;min-height:44px}.footer-links{display:flex;gap:24px}
+    html[lang="zh-CN"] h1{font-size:clamp(48px,6vw,80px);line-height:1.25;letter-spacing:-.025em}html[lang="zh-CN"] .hero-copy{max-width:29em}html[lang="zh-CN"] .scope-name{font-size:clamp(23px,2.5vw,32px)}html[lang="zh-CN"] .intro-text{line-height:1.9}
+    @media(prefers-reduced-motion:no-preference){.scope-band .primary svg{animation:route-in .8s cubic-bezier(.16,1,.3,1) both}@keyframes route-in{from{transform:translate(-10px,10px)}to{transform:translate(0,0)}}}
+    @media(max-width:900px){.nav-right,.nav-links{gap:18px}.hero{padding-top:54px}.hero-main{gap:30px}.hero-copy{font-size:17px}.hero-actions{gap:16px}.scope-band>div{padding:26px}.section-heading,.service,.approach-top{gap:36px}.company-details{gap:36px}.hero-bottom{align-items:start}.hero-bottom p:first-child{max-width:60%}.contact-mail{font-size:32px}}
+    @media(max-width:680px){.site-header{padding-block:20px;gap:14px}.brand{font-size:25px}.nav-links{display:none}.nav-right{gap:0}.language button{padding:7px 9px}.hero{padding-top:46px;padding-bottom:36px}.hero-main{grid-template-columns:1fr;gap:27px}.hero h1{font-size:59px}.hero-copy{font-size:16px;max-width:42ch}.hero-actions{margin-top:24px;gap:24px}.button{padding:13px 20px}.scope-band{margin-top:36px;grid-template-columns:1fr;min-height:0}.scope-band>div{padding:22px 24px;gap:13px}.scope-band>div+div{border-left:0;border-top:1px solid #547368}.scope-band .scope-name{font-size:25px}.scope-band .scope-detail{font-size:12px}.scope-band .scope-top{align-items:center}.scope-band svg{width:22px;height:22px}.hero-bottom{font-size:12px;gap:20px}.hero-bottom p:first-child{max-width:65%}.section{padding-block:54px}.section-heading,.service,.approach-top{grid-template-columns:1fr;gap:24px}.section-heading{margin-bottom:23px}.section-heading h2,.practice-heading h2,.contact h2{font-size:34px}.intro-text{font-size:20px}.about-detail{margin-left:0;font-size:15px}.practice-heading{display:block;margin-bottom:28px}.practice-heading>p{margin-top:20px;font-size:15px}.service{padding:26px 0;gap:14px}.service h3{font-size:22px}.service .service-text{font-size:15px}.service .topics{font-size:12px;gap:7px 18px}.approach{padding-block:48px}.approach-top{gap:19px}.approach h2{font-size:30px}.approach-top>p{font-size:15px}.approach-steps{grid-template-columns:1fr;gap:26px}.approach-steps p{max-width:48ch}.contact{padding-block:54px}.contact-top{display:block;margin-bottom:30px}.contact-top>p{margin-top:22px;font-size:15px}.contact-mail{font-size:clamp(18px,5.7vw,31px);gap:10px}.contact-mail .icon{width:21px;height:21px}.company-details{grid-template-columns:1fr;gap:28px;margin-top:36px;padding-top:25px}.company-name{font-size:16px}footer{align-items:start;font-size:12px;flex-direction:column;gap:13px}.footer-links{gap:23px}html[lang="zh-CN"] h1{font-size:52px}html[lang="zh-CN"] .hero h1 br{display:block}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip"><span data-lang="en">Skip to content</span><span data-lang="zh" lang="zh-CN">跳至正文</span></a>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="GroveMind home">GroveMind<span class="brand-dot">.</span></a>
+    <div class="nav-right">
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about"><span data-lang="en">About</span><span data-lang="zh" lang="zh-CN">关于我们</span></a>
+        <a href="#services"><span data-lang="en">What we do</span><span data-lang="zh" lang="zh-CN">业务方向</span></a>
+        <a href="#contact"><span data-lang="en">Contact</span><span data-lang="zh" lang="zh-CN">联系我们</span></a>
+      </nav>
+      <div class="language" role="group" aria-label="Language / 语言">
+        <button type="button" data-set-lang="en" aria-pressed="true" lang="en">English</button>
+        <button type="button" data-set-lang="zh" aria-pressed="false" lang="zh-CN">中文</button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-main">
+        <h1 id="hero-title"><span data-lang="en">Software<br>with <em>purpose.</em></span><span data-lang="zh" lang="zh-CN">用软件，<br>让想法<em>落地。</em></span></h1>
+        <div>
+          <p class="hero-copy"><span data-lang="en">We build software and apps around real needs, connecting thoughtful design with practical technology.</span><span data-lang="zh" lang="zh-CN">专注软件与 App 开发，以实际需求为起点，将清晰的设计与实用的技术连接起来。</span></p>
+          <div class="hero-actions">
+            <a class="button" href="mailto:jinxing@grovemindlabs.com"><span data-lang="en">Discuss a project</span><span data-lang="zh" lang="zh-CN">联系洽谈项目</span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+            <a class="sub-link" href="#services"><span data-lang="en">Explore our work</span><span data-lang="zh" lang="zh-CN">了解业务方向</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="scope-band" aria-label="Business areas / 业务方向">
+        <div class="primary"><div class="scope-top"><p class="scope-name"><span data-lang="en">Software & apps</span><span data-lang="zh" lang="zh-CN">软件与应用</span></p><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></div><p class="scope-detail"><span data-lang="en">Digital tools for everyday use.</span><span data-lang="zh" lang="zh-CN">服务真实场景的数字工具。</span></p></div>
+        <div><div class="scope-top"><p class="scope-name"><span data-lang="en">AI applications</span><span data-lang="zh" lang="zh-CN">AI 应用</span></p></div><p class="scope-detail"><span data-lang="en">Intelligence in useful workflows.</span><span data-lang="zh" lang="zh-CN">融入实际工作流程的智能能力。</span></p></div>
+        <div><div class="scope-top"><p class="scope-name"><span data-lang="en">Product design</span><span data-lang="zh" lang="zh-CN">产品设计</span></p></div><p class="scope-detail"><span data-lang="en">Ideas considered as a whole.</span><span data-lang="zh" lang="zh-CN">统筹功能、外观与使用体验。</span></p></div>
+      </div>
+      <div class="hero-bottom"><p>Shenzhen Grovemind Technology Co., Ltd.</p><p><span data-lang="en">Shenzhen, China</span><span data-lang="zh" lang="zh-CN">中国 · 深圳</span></p></div>
+    </section>
+    <section class="section wrap" id="about" aria-labelledby="about-title">
+      <div class="section-heading"><h2 id="about-title"><span data-lang="en">Technology starts<br>with understanding.</span><span data-lang="zh" lang="zh-CN">从理解需求开始，<br>把技术用于实处。</span></h2><p class="intro-text"><span data-lang="en">GroveMind is a technology company based in Shenzhen, China. Our primary focus is software and app development, supported by work in AI applications and product design.</span><span data-lang="zh" lang="zh-CN">GroveMind（深圳市智林星瀚科技有限公司）是一家位于中国深圳的科技公司，以软件与 App 开发为核心，同时开展 AI 应用开发与产品设计。</span></p></div>
+      <div class="about-detail"><p><span data-lang="en">We approach a project through the people who will use it: what they need to accomplish, where the friction lies, and how a clearer digital experience can help. This perspective guides our work from the initial concept through interface design, development and iteration.</span><span data-lang="zh" lang="zh-CN">我们从使用者出发理解项目：需要完成什么、哪些环节存在阻力，以及怎样通过更清晰的数字体验改善流程。这样的思路贯穿需求梳理、界面设计、开发与迭代。</span></p><p><span data-lang="en">Alongside software, we explore how AI capabilities and physical product design can support a coherent user experience. Project scope and deliverables are defined around the needs of each collaboration.</span><span data-lang="zh" lang="zh-CN">围绕软件开发，我们也关注 AI 能力与实体产品设计如何共同服务于完整的使用体验，并根据具体合作需求确定项目范围与交付内容。</span></p></div>
+    </section>
+    <section class="section wrap" id="services" aria-labelledby="services-title">
+      <div class="practice-heading"><h2 id="services-title"><span data-lang="en">What we do.</span><span data-lang="zh" lang="zh-CN">我们的业务。</span></h2><p><span data-lang="en">Software at the core. Design and intelligence where they make a difference.</span><span data-lang="zh" lang="zh-CN">以软件为核心，让设计与智能服务于实际需求。</span></p></div>
+      <article class="service"><h3><span data-lang="en">Software & app development</span><span data-lang="zh" lang="zh-CN">软件与 App 开发</span></h3><div><p class="service-text"><span data-lang="en">Development of mobile applications, web interfaces and software tools. Our work connects requirements, interface design and implementation, with attention to usability, device compatibility and maintainable software.</span><span data-lang="zh" lang="zh-CN">开展移动应用、网页界面与软件工具开发，衔接需求梳理、界面设计和功能实现，关注易用性、设备适配与后续维护。</span></p><p class="topics"><span data-lang="en">Mobile applications</span><span data-lang="zh" lang="zh-CN">移动应用</span><span data-lang="en">Web development</span><span data-lang="zh" lang="zh-CN">网页开发</span><span data-lang="en">Interface design</span><span data-lang="zh" lang="zh-CN">界面设计</span></p></div></article>
+      <article class="service"><h3><span data-lang="en">AI application development</span><span data-lang="zh" lang="zh-CN">AI 应用开发</span></h3><div><p class="service-text"><span data-lang="en">Integration of AI capabilities into software and practical workflows, including information processing, content assistance and task automation. We focus on a clear role for the technology within the wider application.</span><span data-lang="zh" lang="zh-CN">将 AI 能力融入软件和具体工作流程，涵盖信息处理、内容辅助与任务自动化，重视技术在整体应用中的明确作用与使用边界。</span></p><p class="topics"><span data-lang="en">AI integration</span><span data-lang="zh" lang="zh-CN">AI 能力集成</span><span data-lang="en">Workflow tools</span><span data-lang="zh" lang="zh-CN">流程工具</span><span data-lang="en">Automation</span><span data-lang="zh" lang="zh-CN">自动化</span></p></div></article>
+      <article class="service"><h3><span data-lang="en">Product & industrial design</span><span data-lang="zh" lang="zh-CN">产品与工业设计</span></h3><div><p class="service-text"><span data-lang="en">Product concept development and industrial design, considering function, appearance and interaction together. This work complements software development when a project spans digital interfaces and physical products.</span><span data-lang="zh" lang="zh-CN">开展产品概念与工业设计，统筹功能、外观和交互体验；在同时涉及数字界面与实体产品的项目中，与软件开发协同推进。</span></p><p class="topics"><span data-lang="en">Product concepts</span><span data-lang="zh" lang="zh-CN">产品概念</span><span data-lang="en">Industrial design</span><span data-lang="zh" lang="zh-CN">工业设计</span><span data-lang="en">Interaction</span><span data-lang="zh" lang="zh-CN">交互体验</span></p></div></article>
+    </section>
+    <section class="approach" aria-labelledby="approach-title"><div class="wrap">
+      <div class="approach-top"><h2 id="approach-title"><span data-lang="en">A considered way<br>to build.</span><span data-lang="zh" lang="zh-CN">把每一步，<br>想清楚、做扎实。</span></h2><p><span data-lang="en">Clear requirements and careful iteration keep the work connected to its purpose. Our approach brings the problem, the experience and the implementation into one conversation.</span><span data-lang="zh" lang="zh-CN">用清晰的需求与持续迭代，让开发始终围绕项目目标展开，将问题、使用体验与技术实现放在一起考虑。</span></p></div>
+      <div class="approach-steps"><article><h3><span data-lang="en">Understand</span><span data-lang="zh" lang="zh-CN">理解需求</span></h3><p><span data-lang="en">Clarify the use case, users and practical constraints before defining what to build.</span><span data-lang="zh" lang="zh-CN">明确使用场景、目标用户与实际约束，梳理项目范围。</span></p></article><article><h3><span data-lang="en">Design & develop</span><span data-lang="zh" lang="zh-CN">设计与开发</span></h3><p><span data-lang="en">Connect interface decisions with the underlying functionality through working prototypes and implementation.</span><span data-lang="zh" lang="zh-CN">通过原型与功能实现，将界面设计和底层功能衔接起来。</span></p></article><article><h3><span data-lang="en">Review & refine</span><span data-lang="zh" lang="zh-CN">检查与迭代</span></h3><p><span data-lang="en">Review behavior and usability, then use feedback to guide improvements.</span><span data-lang="zh" lang="zh-CN">检查功能表现与使用体验，并根据反馈持续改进。</span></p></article></div>
+    </div></section>
+    <section class="contact wrap" id="contact" aria-labelledby="contact-title">
+      <div class="contact-top"><h2 id="contact-title"><span data-lang="en">Start a conversation.</span><span data-lang="zh" lang="zh-CN">从一次沟通开始。</span></h2><p><span data-lang="en">For software development, app projects or business enquiries, email us with a brief introduction to what you have in mind.</span><span data-lang="zh" lang="zh-CN">如需软件开发、App 项目合作或商务沟通，欢迎通过邮件介绍你的需求。</span></p></div>
+      <a class="contact-mail" href="mailto:jinxing@grovemindlabs.com">jinxing@grovemindlabs.com<svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
+      <div class="company-details"><div><p class="detail-title"><span data-lang="en">Company</span><span data-lang="zh" lang="zh-CN">公司主体</span></p><p class="company-name" lang="en">Shenzhen Grovemind Technology Co., Ltd.</p><p class="company-cn" lang="zh-CN">深圳市智林星瀚科技有限公司</p><p class="company-description"><span data-lang="en">GroveMind is the company name used on this website.</span><span data-lang="zh" lang="zh-CN">GroveMind 为本网站使用的公司英文简称。</span></p></div><div><p class="detail-title"><span data-lang="en">Registered address</span><span data-lang="zh" lang="zh-CN">注册地址</span></p><address><span data-lang="en">Room 903, Block C, Building 2, Manjinghua Yunzhu Garden (Phase 1), Shapu Community, Songgang Subdistrict, Bao'an District, Shenzhen, Guangdong, China</span><span data-lang="zh" lang="zh-CN">中国广东省深圳市宝安区松岗街道沙浦社区满京华云著花园（一期）2号楼C座903</span></address><p><span data-lang="en">Postal code: 518105</span><span data-lang="zh" lang="zh-CN">邮政编码：518105</span></p></div></div>
+    </section>
+  </main>
+  <footer class="wrap"><p>© 2026 Shenzhen Grovemind Technology Co., Ltd.</p><div class="footer-links"><a href="./privacy.html"><span data-lang="en">Privacy</span><span data-lang="zh" lang="zh-CN">隐私说明</span></a><a href="#"><span data-lang="en">Back to top</span><span data-lang="zh" lang="zh-CN">返回顶部</span></a></div></footer>
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll('[data-set-lang]');
+      function setLanguage(language, persist) {
+        var isChinese = language === 'zh';
+        document.documentElement.lang = isChinese ? 'zh-CN' : 'en';
+        document.title = isChinese ? 'GroveMind | 软件与 App 开发 · 深圳市智林星瀚科技有限公司' : 'GroveMind | Software & App Development';
+        buttons.forEach(function (button) { button.setAttribute('aria-pressed', String(button.dataset.setLang === language)); });
+        if (persist) {
+          try { localStorage.setItem('grovemind-language', language); } catch (_) {}
+          var url = new URL(location.href); url.searchParams.set('lang', language);
+          history.replaceState(null, '', url.pathname + url.search + url.hash);
+        }
+        var privacy = document.querySelector('a[href^="./privacy.html"]');
+        if (privacy) privacy.href = './privacy.html?lang=' + language;
+      }
+      buttons.forEach(function (button) { button.addEventListener('click', function () { setLanguage(button.dataset.setLang, true); }); });
+      setLanguage(document.documentElement.lang === 'zh-CN' ? 'zh' : 'en', false);
+    })();
+  </script>
+</body>
+</html>
