@@ -29,7 +29,7 @@ Configured on November 3, 2026:
 - Domain ownership verified under the `kimsung92` GitHub account, using the GitHub-provided TXT verification record.
 - Four apex A records: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`.
 - `www` CNAME: `kimsung92.github.io` (no protocol or repository path).
-- Canonical and Open Graph URLs use `https://grovemindlabs.com/`; `robots.txt` links to the two-page sitemap.
+- Canonical and Open Graph URLs use `https://grovemindlabs.com/`; `robots.txt` links to the three-page sitemap (home, website privacy and LUMISCENE privacy).
 - GitHub provisions the TLS certificate. HTTPS enforcement is enabled once the certificate is ready; see the dated deployment verification for the confirmed state.
 
 **All eight pre-existing email records were preserved**, including three MX records, SPF, and the `mail`, `smtp`, `imap`, `pop3` CNAME records. Their values, TTLs, enabled states and original update times were compared before and after the website DNS additions. No nameservers were changed.
